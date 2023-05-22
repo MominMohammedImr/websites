@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="playvideo.css">
+
+    </head>
+    <body>
+        <div onclick="disable_search_logo()" class="navbar">
+           
+            <div class="logo">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">☰</button>
+                    
+                  </div>
+                <img id="yttext" src="images/youtubetext.png">
+
+            </div>
+            
+            <div class="sidetext">
+                <div class="search-bar">
+                    <div class="inside-search-logo">
+                        <img id="inside-search-logo" src="images/outsidesearch.png">
+                    </div>
+                    <div class="search">
+                        <input id="search"oninput="inside_search_logo()" type="text" placeholder="Search">
+                    </div>
+                    <div onclick="searchpage()"onmouseover="visiblesearchbtn()"onmouseout="disablesearchbtn()"class="outside-search-logo">
+                        <img id="outside-search-logo" src="images/outsidesearch.png">
+                    </div>
+
+                </div>
+                <div class="search-touch-p">
+                    <p id="search-touch-p">search</p>
+                </div>
+                <div class="mic">
+                    <img id="mic" src="images/microphone.png">
+
+                </div>
+               
+            </div>
+            <div class="right-side-nav">
+                <img id="create-video" src="images/createvideo.png">
+                <img id="notification-logo" onclick="hide_side()" src="images/notification-logo.png">
+                <img id="identity-logo" src="images/identity-logo.png">
+            </div>
+        </div>
+        <div class="container-body">
+            <div onclick="disable_search_logo()" class="leftsidedownmenu">
+                <div class="box1">
+                    <div onclick="homepagereturn()" class="box11">
+                        <div class="box11-img">
+                            <img id="box11-img" src="images/topbox1/home.png">
+                       
+                        </div>
+                        <div class="box11-p">
+                            <p id="box11-p">Home</p>
+                        </div>
+                       
+                    </div>
+                    <div onclick="homepagereturn()"class="box12">
+                        <div class="box12-img">
+                            <img id="box12-img" src="images/topbox1/short.png">
+                       
+                        </div>
+                        <div class="box12-p">
+                            <p id="box12-p">Shorts</p>
+                        </div>
+                       
+                    </div>
+                    <div onclick="homepagereturn()"class="box13">
+                        <div class="box13-img">
+                            <img id="box13-img" src="images/topbox1/subscribe.png">
+                       
+                        </div>
+                        <div class="box13-p">
+                            <p id="box13-p">Subscriptions</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="box2">
+                    <div onclick="homepagereturn()"class="box21">
+                        <div class="box21-img">
+                            <img id="box21-img" src="images/topbox2/library.png">
+                       
+                        </div>
+                        <div class="box21-p">
+                            <p id="box21-p">Library</p>
+                        </div>
+                       
+                    </div>
+                    <div onclick="homepagereturn()"class="box22">
+                        <div class="box22-img">
+                            <img id="box22-img" src="images/topbox2/history.png">
+                       
+                        </div>
+                        <div class="box22-p">
+                            <p id="box22-p">History</p>
+                        </div>
+                       
+                    </div>
+                    <div onclick="homepagereturn()"class="box23">
+                        <div class="box23-img">
+                            <img id="box23-img" src="images/topbox2/clock.png">
+                       
+                        </div>
+                        <div class="box23-p">
+                            <p id="box23-p">Watch Later</p>
+                        </div>
+                       
+                    </div>
+                    <div onclick="homepagereturn()"class="box24">
+                        <div class="box24-img">
+                            <img id="box24-img" src="images/topbox2/like.png">
+                       
+                        </div>
+                        <div class="box24-p">
+                            <p id="box24-p">Liked Videos</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="box3">
+                    <div onclick="homepagereturn()"class="box31">
+                        <div class="box31-p">
+                            <p id="box31-ps">Subscriptions</p>
+                        </div>
+                       
+                    </div>
+                    <div onclick="homepagereturn()"class="box32">
+                        <div class="box32-img">
+                            <img  class="box3-subscription" id="box32-img" src="images/subscription/music.jpg">
+                       
+                        </div>
+                        <div class="box32-p">
+                            <p id="box32-p">Music</p>
+                        </div>
+                       
+                    </div>
+                    <div onclick="homepagereturn()"class="box33">
+                        <div class="box33-img">
+                            <img  class="box3-subscription" id="box33-img" src="images/subscription/sport.jpg">
+                       
+                        </div>
+                        <div class="box33-p">
+                            <p id="box33-p">Sport</p>
+                        </div>
+                       
+                    </div>
+                    <div onclick="homepagereturn()"class="box34">
+                        <div class="box34-img">
+                            <img  class="box3-subscription"id="box34-img" src="images/subscription/gamig.jpg">
+                       
+                        </div>
+                        <div class="box34-p">
+                            <p id="box34-p">Gaming</p>
+                        </div>
+                    </div>
+                    <div onclick="homepagereturn()"class="box35">
+                        <div class="box35-img">
+                            <img  class="box3-subscription"id="box35-img" src="images/subscription/films.jpg">
+                       
+                        </div>
+                        <div class="box35-p">
+                            <p id="box35-p">Films</p>
+                        </div>
+                    </div>
+                       
+                    </div>
+                    <div class="box4">
+                        <div onclick="homepagereturn()" class="box41">
+                            <div class="box41-p">
+                                <p id="box41-ps">Explore</p>
+                            </div>
+                           
+                        </div>
+                        <div onclick="homepagereturn()"class="box42">
+                            <div class="box42-img">
+                                <img id="box42-img" src="images/explore/trending-topic.png">
+                           
+                            </div>
+                            <div class="box42-p">
+                                <p id="box42-p">Trending</p>
+                            </div>
+                           
+                        </div>
+                        <div onclick="homepagereturn()"class="box43">
+                            <div class="box43-img">
+                                <img id="box43-img" src="images/explore/bag.png">
+                           
+                            </div>
+                            <div class="box43-p">
+                                <p id="box43-p">Shopping</p>
+                            </div>
+                           
+                        </div>
+                        <div onclick="homepagereturn()"class="box44">
+                            <div class="box44-img">
+                                <img id="box44-img" src="images/explore/musical-note.png">
+                           
+                            </div>
+                            <div class="box44-p">
+                                <p id="box44-p">Music</p>
+                            </div>
+                        </div>
+                        <div onclick="homepagereturn()"class="box45">
+                            <div class="box45-img">
+                                <img id="box45-img" src="images/explore/video.png">
+                           
+                            </div>
+                            <div class="box45-p">
+                                <p id="box45-p">Movies & shows</p>
+                            </div>
+                        </div>
+                        <div onclick="homepagereturn()"class="box46">
+                            <div class="box46-img">
+                                <img id="box46-img" src="images/explore/live.png">
+                           
+                            </div>
+                            <div class="box46-p">
+                                <p id="box46-p">Live</p>
+                            </div>
+                           
+                        </div>
+                        <div onclick="homepagereturn()" class="box47">
+                            <div class="box47-img">
+                                <img id="box47-img" src="images/explore/game.png">
+                           
+                            </div>
+                            <div class="box47-p">
+                                <p id="box47-p">Gaming</p>
+                            </div>
+                           
+                        </div>
+                        <div onclick="homepagereturn()"class="box48">
+                            <div class="box48-img">
+                                <img id="box48-img" src="images/explore/news.png">
+                           
+                            </div>
+                            <div class="box48-p">
+                                <p id="box48-p">News</p>
+                            </div>
+                        </div>
+                        <divonclick="homepagereturn()" class="box49">
+                            <div class="box49-img">
+                                <img id="box49-img" src="images/explore/trophy.png">
+                           
+                            </div>
+                            <div class="box49-p">
+                                <p id="box49-p">Sport</p>
+                            </div>
+                        </divonclick=>
+                           
+                        </div>
+                   <div class="box5">
+                            <div class="box51">
+                                <div class="box51-ps">
+                                    <p id="box51-ps">More From Youtube</p>
+                                </div>
+                               
+                            </div>
+                            <div class="box52">
+                                <div class="box52-img">
+                                    <img id="box52-img" src="images/morefromyt/yt-premium.png">
+                               
+                                </div>
+                                <div class="box52-p"id="box5-p">
+                                    <p id="box52-p">Youtube Premium</p>
+                                </div>
+                               
+                            </div>
+                            <div class="box53">
+                                <div class="box53-img">
+                                    <img id="box53-img" src="images/morefromyt/yt-music.png">
+                               
+                                </div>
+                                <div class="box53-p" id="box5-p">
+                                    <p id="box53-p">Yotube Music</p>
+                                </div>
+                               
+                            </div>
+                            <div class="box54">
+                                <div class="box54-img">
+                                    <img id="box54-img" src="images/morefromyt/yt-kids.png">
+                               
+                                </div>
+                                <div class="box54-p" id="box5-p">
+                                    <p id="box54-p">Youtube Kids</p>
+                                </div>
+                            </div>
+                            
+                               
+                            </div>
+                    <div class="box6">
+                       <div onclick="homepagereturn()"class="box61">
+                                    <div class="box61-img">
+                                        <img id="box61-img" src="images/settings/setting.png">
+                                   
+                                    </div>
+                                    <div class="box61-p">
+                                        <p id="box61-p">Settings</p>
+                                    </div>
+                                   
+                                </div>
+                         <div onclick="homepagereturn()" class="box62">
+                                    <div class="box62-img">
+                                        <img id="box62-img" src="images/settings/report.png">
+                                   
+                                    </div>
+                                    <div class="box62-p">
+                                        <p id="box62-p">Report history</p>
+                                    </div>
+                                   
+                                </div>
+                         <div onclick="homepagereturn()"class="box63">
+                                    <div class="box63-img">
+                                        <img id="box63-img" src="images/settings/help.png">
+                                   
+                                    </div>
+                                    <div class="box63-p">
+                                        <p id="box63-p">Help</p>
+                                    </div>
+                                   
+                                </div>
+                         <div onclick="homepagereturn()"class="box64">
+                                    <div class="box64-img">
+                                        <img id="box64-img" src="images/settings/feedback.png">
+                                   
+                                    </div>
+                                    <div class="box64-p">
+                                        <p id="box64-p">Send feedback</p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="box7b">
+                                <div class="box71b">
+                                    <p id="box71b-p">About </p>
+                                    <p id="box71b-p">Press</p>
+                                    <p id="box71b-p"> Copyright</p>
+                                    <p id="box71b-p">Contact us </p>
+                                    <p id="box71b-p">Creator </p>
+                                    <p id="box71b-p"> Advertise</p>
+                                    <p id="box71b-p">Developers</p>
+                        
+                                   
+                                </div>
+                                <div class="box71b">
+                                    <p id="box71b-p">Terms  </p>
+                                    <p id="box71b-p">Privacy </p>
+                                     <p id="box71b-p"> Policy & Safety</p>
+                                    <p id="box71b-p">How Youtube Works</p>
+                                    <p id="box71b-p">Test New Features</p>
+                                    
+                                        
+                                   
+                                </div>
+                            </div>
+                            
+                        
+                </div>
+                <div class="ytps">
+                    <iframe id="play-video"height="450" width="100%"
+                      src=""
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      frameborder="0" allowfullscreen >
+                    </iframe>
+                    <div class="video-des">
+                        <div class="video-titlep">
+                            <p id="video-titlep">
+
+                            </p>
+                        </div>
+                        <div class="channel-name">
+                            <div class="channel-img">
+                                <img id="channel-img"src="">
+                            </div>
+                            <div class="channel-titles">
+                                <p id="channel-title">
+
+                                </p>
+
+                            </div>
+                            
+                           
+                          
+                        </div>
+                         <div class="videos-disc">
+                                <p id="videos-disc">
+                                </p>
+                               
+                                
+                            </div>
+                    </div>
+                  </div>
+                  <div class="right-suggest-video">
+                    
+                    
+
+                  </div>
+        
+        </div>
+
+    </body>
+</html>
+<script src="playvideo.js"></script>

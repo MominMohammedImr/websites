@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="dicegamemainpage.css">
+        <title>
+            Enjoy Dice game
+        </title>
+      
+    </head>
+    <body>
+        <div class="winner-box">
+            <p id="winner">Dice Game</p>
+        </div>
+
+
+        <div class="box">
+            <div class="inside-box1">
+                <p class="playerp"id="player1">
+                  player 1
+                </p>
+                <img class="playerimg" id="playerimg1"src="../Dicegame/imgsources/1.png">
+            </div>
+            <div id="winnerbox1">
+                <img id="displayimglogo" src="">
+                <p id="winnerp"></p>
+            </div>
+            <div class="inside-box1">
+                <p class="playerp"id="player2">
+                    player 2
+                  </p>
+                  <img class="playerimg"id="playerimg2" src="../Dicegame/imgsources/3.png">
+  
+            </div>
+
+        </div>
+        <div class="bottom">
+            <input class="bottom-text"id="rolldice" onclick="rolldice()" type="button" value="Roll Dice">
+            <input class="bottom-text"id="editname" onclick="editname()" type="button" value="Edit Names">
+            <a class="bottom-text" id="exist" href="indexhomepage.html">Exit</a>
+        </div>
+    </body>
+</html>
+<script src="../Dicegame/dicegame.js"></script>
