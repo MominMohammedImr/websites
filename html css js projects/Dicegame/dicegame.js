@@ -27,20 +27,20 @@ function editname(){
 function rolldice(){
     var dice1=Math.floor(Math.random()*6)+1;
     var dice2=Math.floor(Math.random()*6)+1;
-    document.getElementById("playerimg1").src="../Dicegame/imgsources/"+dice1+".png";
-    document.getElementById("playerimg2").src="../Dicegame/imgsources/"+dice2+".png";
+    document.getElementById("playerimg1").src="./imgsources/"+dice1+".png";
+    document.getElementById("playerimg2").src="./imgsources/"+dice2+".png";
     if(dice1>dice2){
         document.getElementById("winnerbox1").style.visibility="visible"
         document.getElementById("winnerp").innerHTML="Winner"+"<br>"+document.getElementById("player1").innerText;
-        document.getElementById("displayimglogo").src="../Dicegame/imgsources/winner.png";
+        document.getElementById("displayimglogo").src="./imgsources/winner.png";
     }if(dice2>dice1){
         document.getElementById("winnerbox1").style.visibility="visible"
         document.getElementById("winnerp").innerHTML="Winner"+"<br>"+document.getElementById("player2").innerText;
-        document.getElementById("displayimglogo").src="../Dicegame/imgsources/winner.png";
+        document.getElementById("displayimglogo").src="./imgsources/winner.png";
     }
     if(dice1==dice2){
         document.getElementById("winnerbox1").style.visibility="visible"
         document.getElementById("winnerp").innerHTML="Both"+"<br>"+"Winners";
-        document.getElementById("displayimglogo").src="../Dicegame/imgsources/equal.png";
+        document.getElementById("displayimglogo").src="./imgsources/equal.png";
     }
 }
